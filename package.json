@@ -1,0 +1,39 @@
+{
+  "name": "poster-script",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "script": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "npx tsc",
+    "build-app": "npm run build",
+    "list": "node ./dist/index.js -l ./",
+    "app": "npm run build-app & npm run list"
+  },
+  "keywords": [
+    "cli",
+    "npmtool"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.2",
+    "commander": "^10.0.1",
+    "figlet": "^1.6.0",
+    "js-base64": "3.7.5",
+    "jsonc-parser": "3.2.0",
+    "mongodb": "^6.3.0",
+    "semver": "7.5.4",
+    "ts-results": "3.3.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.6",
+    "@types/json-schema": "^7.0.13",
+    "@types/node": "^20.8.3",
+    "@types/semver": "^7.5.3",
+    "typescript": "^5.3.3"
+  }
+}
